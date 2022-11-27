@@ -349,7 +349,7 @@ a {
   width: 528px;
 }
 
-.modal-close {
+.modal__close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -360,7 +360,7 @@ a {
   background-color: white;
 }
 
-.modal-header {
+.modal__header {
   color: var(--black-text);
   font-weight: 700;
   font-size: 20px;
@@ -368,14 +368,14 @@ a {
   text-align: center;
 }
 
-.modal-form-icon {
+.modal-form__icon {
   fill: currentColor;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
 }
 
-.modal-form-fieldset {
+.modal-form__fieldset {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   position: relative;
@@ -391,24 +391,24 @@ a {
   transition-property: border-color, color;
 }
 
-.modal-form-textarea:hover,
-.modal-form-fieldset:hover,
-.modal-form-textarea:focus-within,
-.modal-form-fieldset:focus-within {
+.modal-form__textarea:hover,
+.modal-form__fieldset:hover,
+.modal-form__textarea:focus-within,
+.modal-form__fieldset:focus-within {
   border-color: var(--brand-color);
 }
 
-.modal-form-fieldset:hover .modal-form-icon,
-.modal-form-fieldset:focus-within .modal-form-icon {
+.modal-form__fieldset:hover .modal-form__icon,
+.modal-form__fieldset:focus-within .modal-form__icon {
   color: var(--brand-color);
 }
 
-.modal-form-textarea:focus-within,
-.modal-form-fieldset:focus-within .modal-form-input {
+.modal-form__textarea:focus-within,
+.modal-form__fieldset:focus-within .modal-form__input {
   outline: none;
 }
 
-.modal-form-label {
+.modal-form__label {
   display: block;
   margin-bottom: 4px;
   color: var(--link-color);
@@ -417,14 +417,14 @@ a {
   letter-spacing: 0.01em;
 }
 
-.modal-form-input {
+.modal-form__input {
   height: 100%;
   width: 90%;
   margin-left: 15px;
   border: none;
 }
 
-.modal-form-textarea {
+.modal-form__textarea {
   width: 100%;
   height: 120px;
   resize: none;
@@ -437,7 +437,7 @@ a {
   transition-property: border-color;
 }
 
-.modal-form-textarea::placeholder {
+.modal-form__textarea::placeholder {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -451,14 +451,14 @@ a {
   padding: 0;
 }
 
-.modal-form-legal-label {
+.modal-form-legal__label {
   display: flex;
   align-items: center;
   position: relative;
   cursor: pointer;
 }
 
-.modal-form-checkbox {
+.modal-form__checkbox {
   width: 16px;
   height: 15px;
   margin-right: 7px;
@@ -475,11 +475,11 @@ a {
   border-radius: 2px;
 }
 
-.modal-form-legal-label:has(input:checked) .checkmark-checked {
+.modal-form-legal__label:has(input:checked) .checkmark__checked {
   opacity: 1;
 }
 
-.checkmark-checked {
+.checkmark__checked {
   position: absolute;
   top: -2px;
   left: -2px;

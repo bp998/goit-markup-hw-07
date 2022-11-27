@@ -17,61 +17,61 @@
   <body>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close" type="button" data-modal-close>
+        <button class="modal__close" type="button" data-modal-close>
           <svg height="11" width="11">
             <use href="./images/icons.svg#icon-Vector"></use>
           </svg>
         </button>
-        <p class="modal-header">Zostaw swoje dane w formularzu poniżej</p>
+        <p class="modal__header">Zostaw swoje dane w formularzu poniżej</p>
         <form>
-          <label class="modal-form-label">Imię</label>
-          <fieldset class="modal-form-fieldset">
-            <svg class="modal-form-icon" height="18" width="18">
+          <label class="modal-form__label">Imię</label>
+          <fieldset class="modal-form__fieldset">
+            <svg class="modal-form__icon" height="18" width="18">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
-            <input class="modal-form-input" type="text" name="name" required />
+            <input class="modal-form__input" type="text" name="name" required />
           </fieldset>
-          <label class="modal-form-label">Telefon</label>
-          <fieldset class="modal-form-fieldset">
-            <svg class="modal-form-icon" height="18" width="18">
+          <label class="modal-form__label">Telefon</label>
+          <fieldset class="modal-form__fieldset">
+            <svg class="modal-form__icon" height="18" width="18">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
             <input
-              class="modal-form-input"
+              class="modal-form__input"
               type="tel"
               name="phone_number"
               required
             />
           </fieldset>
-          <label class="modal-form-label">Email</label>
-          <fieldset class="modal-form-fieldset">
-            <svg class="modal-form-icon" height="18" width="18">
+          <label class="modal-form__label">Email</label>
+          <fieldset class="modal-form__fieldset">
+            <svg class="modal-form__icon" height="18" width="18">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
             <input
-              class="modal-form-input"
+              class="modal-form__input"
               type="email"
               name="email"
               required
             />
           </fieldset>
-          <label class="modal-form-label">Komentarz</label>
+          <label class="modal-form__label">Komentarz</label>
           <textarea
-            class="modal-form-textarea"
+            class="modal-form__textarea"
             name="comment"
             placeholder="Wprowadź tekst"
             rows="5"
           ></textarea>
           <fieldset class="modal-form-legal">
-            <label class="modal-form-legal-label">
+            <label class="modal-form-legal__label">
               <input
-                class="modal-form-checkbox"
+                class="modal-form__checkbox"
                 type="checkbox"
                 name="legal_checkbox"
                 required
               />
               <span class="checkmark">
-                <svg class="checkmark-checked" height="15" width="16px">
+                <svg class="checkmark__checked" height="15" width="16px">
                   <use href="./images/icons.svg#icon-icon-check"></use>
                 </svg>
               </span>
