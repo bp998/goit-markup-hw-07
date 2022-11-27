@@ -1,3 +1,5 @@
+/* =======================VARIABLES */
+
 :root {
   --white-color: rgba(255, 255, 255, 1);
   --link-color: rgba(117, 117, 117, 1);
@@ -11,6 +13,8 @@
   --shadow: rgba(47, 48, 58, 0.4);
   --border-grey: rgba(175, 177, 184, 1);
 }
+
+/* ===========================RESET */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -103,10 +107,6 @@ a {
 
 .logo__color--secondary {
   color: var(--white-color);
-}
-
-.logo__footer {
-  margin-bottom: 20px;
 }
 
 .container {
@@ -304,6 +304,10 @@ a {
 
 .newsletter__icon {
   margin-left: 24px;
+}
+
+.logo__footer {
+  margin-bottom: 20px;
 }
 
 .footer-social-headline {
