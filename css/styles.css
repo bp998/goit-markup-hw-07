@@ -327,16 +327,7 @@ a {
   background-color: var(--brand-color);
 }
 
-/*=*/
-/*=*/
-/*=*/
-/*=*/
-/*=*/
-/*=*/
-/*=*/
-/* ====================================================================*/
-/* ========== INDEX.HTML PAGE ==========================================*/
-/* =============================================================== */
+/* ==========MODAL========== */
 
 .modal {
   position: absolute;
@@ -498,12 +489,12 @@ a {
   line-height: 1.71;
 }
 
-.modal-form-checkbox-links {
+.modal-form-checkbox-text__link {
   color: var(--brand-color);
   text-decoration: underline;
 }
 
-.modal-form-checkbox-links:visited {
+.modal-form-checkbox-text__link:visited {
   color: var(--brand-color);
 }
 
@@ -511,6 +502,8 @@ a {
   margin-inline: auto;
   margin-top: 30px;
 }
+
+/* ========== INDEX.HTML PAGE ==========================================*/
 
 .headline-background {
   background-image: linear-gradient(to bottom, var(--shadow), var(--shadow)),
@@ -563,6 +556,13 @@ a {
   color: var(--link-color);
 }
 
+.section-headline {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .skills {
   position: relative;
 }
@@ -580,33 +580,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.section-headline {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.customer {
-  color: var(--border-grey);
-  width: 170px;
-  height: 92px;
-  border: 1px solid currentColor;
-  border-radius: 4px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
-}
-
-.customer:hover {
-  color: var(--brand-color);
-}
-
-.customer-icon {
-  fill: currentColor;
-  cursor: pointer;
 }
 
 .team {
@@ -646,6 +619,26 @@ a {
 .team-background {
   background-color: var(--button-color);
 }
+
+.customer {
+  color: var(--border-grey);
+  width: 170px;
+  height: 92px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+}
+
+.customer:hover {
+  color: var(--brand-color);
+}
+
+.customer-icon {
+  fill: currentColor;
+  cursor: pointer;
+}
 /*=*/
 /*=*/
 /*=*/
@@ -657,13 +650,14 @@ a {
 /* ========== PORTFOLIO.HTML PAGE ========================== */
 /* ========================================================= */
 
-.portfolio-wrapper {
+.filter {
   display: flex;
+  gap: 8px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
-.portfolio-filter-button {
-  font-family: inherit;
+.filter__button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -676,40 +670,30 @@ a {
   transition-property: color, background-color, box-shadow;
 }
 
-.portfolio-filter-button:hover,
-.portfolio-filter-button:focus {
+.filter__button:hover,
+.filter__button:focus {
   color: var(--white-color);
   background-color: var(--brand-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-button-position {
+.portfolio {
   display: flex;
-  gap: 8px;
-  justify-content: center;
-  padding: 0;
-  padding-bottom: 50px;
-  margin: 0;
-}
-
-.portfolio-image-position {
-  display: flex;
-  margin: 0;
-  justify-content: center;
   flex-wrap: wrap;
-  column-gap: 30px;
+  gap: 30px;
 }
 
-.portfolio-image-position li {
-  padding-bottom: 30px;
+.portfolio__box {
+  display: block;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
 }
 
-.box-hover-text-portfolio {
-  font-size: 18px;
-  line-height: 1.56;
-  padding: 24px;
-  color: var(--white-color);
+.box-picture {
+  position: relative;
+  overflow: hidden;
 }
 
 .box-overlay {
@@ -721,41 +705,33 @@ a {
   transform: translateY(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms;
-  overflow: hidden;
+  transition-property: transform;
 }
 
-.box-picture {
-  position: relative;
-  overflow: hidden;
-  height: 294px;
+.box-overlay__text {
+  font-size: 18px;
+  line-height: 1.56;
+  padding: 24px;
+  color: var(--white-color);
 }
 
-.box-styling-portfolio {
-  display: block;
-  width: 370px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: transform, box-shadow;
-}
-
-.box-styling-portfolio:focus .box-overlay,
-.box-styling-portfolio:hover .box-overlay {
-  transform: translateY(0%);
-}
-
-.box-styling-portfolio:hover,
-.box-styling-portfolio:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.text-styling-portfolio {
+.box-description {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
 }
 
-.portfolio-image-header {
+.portfolio__box:focus .box-overlay,
+.portfolio__box:hover .box-overlay {
+  transform: translateY(0%);
+}
+
+.portfolio__box:hover,
+.portfolio__box:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.box-description__title {
   color: var(--black-text);
   font-size: 18px;
   line-height: 2;
@@ -764,7 +740,7 @@ a {
   margin-bottom: 4px;
 }
 
-.portfolio-image-subtitle {
+.box-description__subtitle {
   font-size: 16px;
   line-height: 1.88;
   color: var(--link-color);
